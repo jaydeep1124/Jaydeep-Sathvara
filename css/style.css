@@ -737,7 +737,7 @@ input:checked + .slider:before {
 /* publication  */
 #publication {
   padding: 100px 0;
-  height: 100vh;
+  height: 80vh;
 }
 
 .section-title {
@@ -747,7 +747,6 @@ input:checked + .slider:before {
   margin-bottom: 30px;
   position: relative;
 }
-
 
 
 .card {
