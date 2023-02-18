@@ -517,39 +517,28 @@
           </div>
           <div class="form-container">
               <div class="form-page">
-              <form action="thankyou.html" method="POST" data-netlify="true" class="form">
+                <form name="contact" method="POST" data-netlify="true" action="thankyou.html" class="form">
+                  <input type="hidden" name="form-name" value="contact" />
                 
-                <div class="form-group group-bg" >
-                  <label for="Name" >Name</label>
-                  <input style="color: white;"
-                    type="text"
-                    id="Name"
-                    placeholder="Enter Name"
-                    required
-                  />
-                </div>
+                  <div class="form-group group-bg" >
+                    <label for="name">Name</label>
+                    <input style="color: white;" type="text" id="name" name="name" placeholder="Enter Name" required />
+                  </div>
                 
-                <div class="form-group group-bg" >
-                  <label for="Subject" >How can I reach you?(Email or Linkedin)</label>
-                  <input style="color: white;" 
-                  type="text" 
-                  id="Subject" 
-                  placeholder="How can I reach you? (E-mail or Linkedin)" required
-                   />
-                </div>
+                  <div class="form-group group-bg" >
+                    <label for="contact-info">How can I reach you? (Email or LinkedIn)</label>
+                    <input style="color: white;" type="text" id="contact-info" name="contact-info" placeholder="How can I reach you? (Email or LinkedIn)" required />
+                  </div>
                 
-                <div class="form-group group-bg" >
-                  <label for="Message">Message</label>
-                  <textarea style="color: white;"
-                    name="Message"
-                    id="Message"
-                    placeholder="Message"
-                  ></textarea>
-                </div>
-                <div class="form-group">
-                  <button type="submit" value="submit" class="btn">Submit</button>
-                </div>
-              </form>
+                  <div class="form-group group-bg" >
+                    <label for="message">Message</label>
+                    <textarea style="color: white;" id="message" name="message" placeholder="Message"></textarea>
+                  </div>
+                
+                  <div class="form-group">
+                    <button type="submit" class="btn">Submit</button>
+                  </div>
+                </form>                
             </div>
           </div>
         <footer id="footer" style="border-radius: 100px;">
