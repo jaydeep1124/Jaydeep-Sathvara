@@ -1,4 +1,25 @@
 
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.navbar-nav');
+const links = document.querySelectorAll('.navbar-nav li');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  links.forEach(link => {
+    link.classList.toggle('fade');
+  });
+});
+
+// Define the URL of your home page
+const homeUrl = "https://jaydeep1.netlify.app/#home";
+
+// Check if the page has finished loading
+window.addEventListener("load", () => {
+  // If the URL of the current page is not the home page, redirect to the home page
+  if (window.location.href !== homeUrl) {
+    window.location.href = homeUrl;
+  }
+});
 
 // get the button element
 const button = document.querySelector('#my-button');
@@ -11,18 +32,6 @@ button.addEventListener('click', function() {
   // add a CSS class to the element to trigger the animation
   elementToAnimate.classList.add('animate');
 });
-
-// ?Hamburger menu
-
-const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-
-hamburger.addEventListener("click", mobileMenu);
-
-function mobileMenu() {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-}
 
 // kikikik
 function animateTimelineItems() {

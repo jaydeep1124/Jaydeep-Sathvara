@@ -56,7 +56,7 @@
     />
     <link rel="manifest" href="img/favicon/site.webmanifest" />
   </head>
-  <body id="home" style="background-color:#8caeb7;">
+  <body id="home" onload="location.href='https://jaydeep1.netlify.app/#home;'">
     <header id="hero">
       <nav class="navbar navbar-expand-lg navbar-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,22 +88,23 @@
           </ul>
         </div>
       </nav>
-      <main>
-        <section class="content container" style="height: 100vh;">
-          <div class="content-text">
-            <h1>Jaydeep Sathvara<span class="underline"></span></h1>
-            <h2 class="text-secondary">Full Stack Developer,</h2>
-            <p  style="color: #143730;">Well-versed in object-oriented programming, developing, testing, and debugging code</p>
-          </div>
-        </section>
-      </header>
-      
+  <main>
+    <section class="content container" style="height: 100vh;">
+      <div class="content-text">
+        <h1 class="jd" style="color: aqua;">Jaydeep Sathvara<span class="underline"></span></h1>
+          <h2 class="text-secondary">Full Stack Developer,</h2>
+            <p  style="color: #9a9bef;">Well-versed in object-oriented programming, developing, testing, and debugging code</p>
+      </div>    
+    </section>
+  </header>
+
       <!-- Skills Section -->
       <section id="skills" style="background-image: url('./image/711.jpg');   border-radius: 5%;">
         <div class="container">
           <div class="section-header">
             <h2 class="section-title">Technical Skills</h2>
-            <p class="section-description">Here are some of the programming languages, frameworks, tools, and methodologies that I am proficient in:</p>
+            <p class="section-description" style="">
+              Here are some of the programming languages, frameworks, tools, and methodologies that I am proficient in:</p>
           </div>
           <div class="skills-container">
             <div class="skills-list">
@@ -181,7 +182,7 @@
       
 
             <!-- experience Section-->
-            <section class="work-experience">
+            <section id="experience" class="work-experience">
               <div class="container">
                 <h2 class="section-title" style="margin-left: 20rem;">Work Experience</h2>
                 <div class="jobs">
@@ -452,9 +453,9 @@
       </a>
       
       <!-- About Section -->
-      <section id="about" class="section" style="height: 100vh;">
+      <section id="about" class="section" >
         <div class="about-me-content" data-aos="fade-up" data-aos-duration="1000">
-        <div class="container">
+          <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6">
               <div class="about-me-image">
@@ -472,17 +473,15 @@
               </div>
             </div>
           </div>
-        </div>
+          </div>
         </div>
         <a href="#home" class="btn-scroll-top" title="Back to Top">
           <i class="fas fa-arrow-up"></i>
           <span class="sr-only">Back to Top</span>
         </a>
       </section>
-      
-      <!-- Social -->
-      <section class="icons-container" style="margin-top: 20rem;">
-        <div class="container">
+      <section style="margin-left: 15rem;">
+        <div class="container icons-container">
           <div class="social icons">
             <a
               href="https://github.com/Evavic44"
@@ -504,10 +503,11 @@
             ></a>
           </div>
         </div>
+      
       </section>
       
       <!-- Contact -->
-      <section id="contact" class="contact" style="height: 100vh; border-radius: 100px;">
+      <section id="contact" class="contact" style="height: 100vh;">
         <div class="container">
           <div class="form-header">
             <h2 class="section-title" style="color: #0ff495;">
@@ -549,33 +549,35 @@
               </form>
             </div>
           </div>
-        </div>
+        <footer id="footer" style="border-radius: 100px;">
+          <div class="container">
+            <div class="footer-container">
+              <div class="social">
+                <a href="https://twitter.com/evavic44" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin"></i>
+                  <span class="sr-only">Linkedin</span>
+                </a>
+                <a href="https://github.com/evavic44" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-github"></i>
+                  <span class="sr-only">GitHub</span>
+                </a>
+              </div>
+              <div class="copy">
+                <p style="margin-left: 10rem;">&copy; 2023 Jaydeep Sathvara. All rights reserved.</p>
+              </div>
+              <a href="#home" class="btn-scroll-top" title="Back to Top">
+                <i class="fas fa-arrow-up"></i>
+                <span class="sr-only">Back to Top</span>
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
       </section>
     </main>
-    <footer id="footer" style="border-radius: 100px;">
-      <div class="container">
-        <div class="footer-container">
-          <div class="social">
-            <a href="https://twitter.com/evavic44" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-twitter"></i>
-              <span class="sr-only">Twitter</span>
-            </a>
-            <a href="https://github.com/evavic44" target="_blank" rel="noopener noreferrer">
-              <i class="fab fa-github"></i>
-              <span class="sr-only">GitHub</span>
-            </a>
-          </div>
-          <div class="copy">
-            <p>&copy; 2023 Jaydeep Sathvara. All rights reserved.</p>
-          </div>
-          <a href="#home" class="btn-scroll-top" title="Back to Top">
-            <i class="fas fa-arrow-up"></i>
-            <span class="sr-only">Back to Top</span>
-          </a>
-        </div>
-      </div>
-    </footer>   
+       
   <script src="main.js"></script>
+  <script src="path/to/your/javascript/file.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <script>
