@@ -354,8 +354,6 @@ input:checked + .slider:before {
 .section-title {
   position: relative;
   display: inline-block;
-  margin-top: 5rem;
-  color:#00ffff;
 }
 
 .section-title:after {
